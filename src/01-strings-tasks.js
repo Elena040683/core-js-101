@@ -129,13 +129,14 @@ function repeatString(value, count) {
  *   'I like legends', 'end' => 'I like legs',
  *   'ABABAB','BA' => 'ABAB'
  */
-function removeFirstOccurrences(str, value) {
-  if (!str.includes(value)) {
-    return;
-  }
-  const startIndex = str.indexOf(value);
-  const valueLength = value.length;
-  return str.slice(startIndex, valueLength);
+function removeFirstOccurrences(/* str, value */) {
+  // if (!str.includes(value)) {
+  //   return;
+  // }
+  // const startIndex = str.indexOf(value);
+  // const valueLength = value.length;
+  // return str.slice(startIndex, valueLength);
+  throw new Error('Not implemented');
 }
 
 /**
@@ -164,8 +165,8 @@ function unbracketTag(/* str */) {
  *   'Thunderstruck' => 'THUNDERSTRUCK'
  *  'abcdefghijklmnopqrstuvwxyz' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
  */
-function convertToUpperCase(/* str */) {
-  throw new Error('Not implemented');
+function convertToUpperCase(str) {
+  return str.toUpperCase();
 }
 
 /**
